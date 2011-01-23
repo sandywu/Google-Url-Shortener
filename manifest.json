@@ -1,0 +1,20 @@
+{
+    "name": "Google Url Shortener",
+    "version": "0.1",
+    "description": "Google Url Shortener StandAlone",
+    "icons": { "128": "/images/icon-128.png"},
+    "browser_action": {
+    "default_icon": "/images/icon-16.png", 
+    "default_title": "Google Url Shortener"     
+    },
+    "permissions": [
+	"tabs",
+	"https://www.googleapis.com/"
+    ],
+    "background_page" : "background.html",
+    "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["/script/content.js"]
+  	}
+    ]
+}
