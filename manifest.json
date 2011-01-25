@@ -9,7 +9,8 @@
     },
     "permissions": [
 	"tabs",
-	"https://www.googleapis.com/"
+	"https://www.googleapis.com/",
+	"https://www.google.com/accounts/"
     ],
     "background_page" : "background.html",
     "content_scripts": [{
