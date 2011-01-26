@@ -1,6 +1,6 @@
 {
     "name": "Google Url Shortener",
-    "version": "0.1",
+    "version": "0.1.2",
     "description": "Google Url Shortener StandAlone",
     "icons": { "128": "/images/icon-128.png"},
     "browser_action": {
