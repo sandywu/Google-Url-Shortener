@@ -11,7 +11,7 @@
 	var d = win.document,
 		reSpinUrl = '/images/spin.gif';
 		spinUrl = chrome.extension.getURL(reSpinUrl),
-		imgStr = '<img style="position:absolute;left:15px;top:5px;" src="' + spinUrl + '" />';
+		imgStr = '<img style="position:absolute;z-index:99999;left:15px;top:5px;" src="' + spinUrl + '" />';
 
 	var Tooltip = new function() {
 
