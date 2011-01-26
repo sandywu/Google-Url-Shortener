@@ -83,13 +83,13 @@ function timeout() {
 
 function serialize(parameters) {
 
-  var params = [];
+	var params = [];
 
-  for(var p in parameters) {
-	params.push(encodeURIComponent(p) + '=' + encodeURIComponent(parameters[p]));
-  }
+	for(var p in parameters) {
+		params.push(encodeURIComponent(p) + '=' + encodeURIComponent(parameters[p]));
+	}
 
-  return params.join('&');
+	return params.join('&');
 }
 
 function copyToClipBoard(url) {
