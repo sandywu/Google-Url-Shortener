@@ -11,12 +11,12 @@
 	var d = win.document,
 		reSpinUrl = '/images/spin.gif';
 		spinUrl = chrome.extension.getURL(reSpinUrl),
-		imgStr = '<img style="position:absolute;z-index:99999;left:15px;top:5px;" src="' + spinUrl + '" />';
+		imgStr = '<img style="position:absolute;left:15px;top:5px;" src="' + spinUrl + '" />';
 
 	var Tooltip = new function() {
 
 		var tip = d.createElement('div'),
-			cssText = 'text-align:center;position:fixed;font-weight:normal;font-family:"Microsoft Yahei","Arial","Tahoma","Verdana";left:5px;top:5px;display:none;width:220px;color:#fff;height:25px;border:none;line-height:27px;font-size:12px;background:#fff;',
+			cssText = 'text-align:center;position:fixed;z-index:99999;font-weight:normal;font-family:"Microsoft Yahei","Arial","Tahoma","Verdana";left:5px;top:5px;display:none;width:220px;color:#fff;height:25px;border:none;line-height:27px;font-size:12px;background:#fff;',
 			timer = null,
 			latency = 3500,
 			bgColor = {
